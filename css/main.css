@@ -89,6 +89,17 @@ svg {
 .container .section .buttons .primary-btn:hover {
   background-color: hsl(135deg, 63%, 56%);
 }
+.container .section .buttons .primary-btn span {
+  font-size: 1em;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
+.container .section .buttons .pause-btn {
+  background-color: hsl(351deg, 73%, 45%);
+}
+.container .section .buttons .pause-btn:hover {
+  background-color: hsl(352deg, 76%, 50%);
+}
 .container .section .buttons .secondary-btn {
   background-color: hsl(50deg, 100%, 60%);
 }

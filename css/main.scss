@@ -80,6 +80,18 @@ svg {
         &:hover {
           background-color: $primary-btn-hover-color;
         }
+        span {
+          font-size: 1em;
+          font-weight: 700;
+          color: $white;
+        }
+      }
+      .pause-btn {
+        background-color: $pause-btn-color;
+
+        &:hover {
+          background-color: $pause-btn-hover-color;
+        }
       }
       .secondary-btn {
         @extend %btn-shared;
