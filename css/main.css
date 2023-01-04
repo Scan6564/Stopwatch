@@ -1,0 +1,137 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo 2", cursive; /* Weight 700 */
+  font-size: 16px;
+}
+
+.container .section .buttons .secondary-btn, .container .section .buttons .primary-btn {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  text-transform: capitalize;
+  margin: 20px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+svg {
+  width: 30px;
+  fill: hsl(0deg, 0%, 100%);
+  margin-right: 5px;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+}
+.container .header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(239deg, 94%, 19%);
+  padding: 20px 0;
+}
+.container .header img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+.container .header h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
+.container .section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right, hsl(190deg, 74%, 59%), hsl(190deg, 77%, 88%));
+  padding: 150px 0;
+}
+.container .section p {
+  font-family: "Orbitron", sans-serif; /* Weight 700 */
+  font-size: 8vw;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 60px;
+}
+.container .section .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  border-top: 1px solid hsl(210deg, 16%, 93%);
+  border-bottom: 1px solid hsl(210deg, 16%, 93%);
+}
+.container .section .buttons .primary-btn {
+  background-color: hsl(135deg, 63%, 48%);
+}
+.container .section .buttons .primary-btn:hover {
+  background-color: hsl(135deg, 63%, 56%);
+}
+.container .section .buttons .secondary-btn {
+  background-color: hsl(50deg, 100%, 60%);
+}
+.container .section .buttons .secondary-btn:hover {
+  background-color: hsl(60deg, 100%, 62%);
+}
+.container .footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(201deg, 100%, 36%);
+  padding: 20px 0;
+  gap: 10px;
+}
+.container .footer .footer-logo {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .footer .footer-logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.container .footer .footer-logo h3 {
+  font-size: 2em;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
+.container .footer .github-icon {
+  width: 40px;
+  height: 40px;
+  color: hsl(0deg, 0%, 100%);
+  transition: all 0.5s ease;
+}
+.container .footer .github-icon:hover {
+  transform: scale(1.2);
+}
+.container .footer p {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}/*# sourceMappingURL=main.css.map */

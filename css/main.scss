@@ -1,0 +1,133 @@
+@import "reset.scss";
+@import "colors.scss";
+
+body {
+  font-family: "Baloo 2", cursive; /* Weight 700 */
+  font-size: 16px;
+}
+@mixin display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%btn-shared {
+  width: 200px;
+  height: 50px;
+  @include display-flex;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: $white;
+  text-transform: capitalize;
+  margin: 20px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+svg {
+  width: 30px;
+  fill: $white;
+  margin-right: 5px;
+}
+.container {
+  max-width: 1920px;
+  width: 100%;
+
+  .header {
+    width: 100%;
+    @include display-flex;
+    background-color: $header-bg;
+    padding: 20px 0;
+
+    img {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+    }
+    h1 {
+      font-size: 2.8em;
+      font-weight: 700;
+      color: $white;
+    }
+  }
+  .section {
+    width: 100%;
+    @include display-flex;
+    flex-direction: column;
+    background: $section-bg;
+    padding: 150px 0;
+
+    p {
+      font-family: "Orbitron", sans-serif; /* Weight 700 */
+      font-size: 8vw;
+      font-weight: 700;
+      color: $white;
+      margin-bottom: 60px;
+    }
+
+    .buttons {
+      width: 100%;
+      @include display-flex;
+      flex-wrap: wrap;
+      padding: 50px 0;
+      border-top: 1px solid $border-color;
+      border-bottom: 1px solid $border-color;
+
+      .primary-btn {
+        @extend %btn-shared;
+        background-color: $primary-btn-color;
+
+        &:hover {
+          background-color: $primary-btn-hover-color;
+        }
+      }
+      .secondary-btn {
+        @extend %btn-shared;
+        background-color: $secondary-btn-color;
+
+        &:hover {
+          background-color: $secondary-btn-hover-color;
+        }
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    @include display-flex;
+    flex-direction: column;
+    background-color: $footer-bg;
+    padding: 20px 0;
+    gap: 10px;
+
+    .footer-logo {
+      width: 200px;
+      @include display-flex;
+
+      img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 2em;
+        font-weight: 700;
+        color: $white;
+      }
+    }
+    .github-icon {
+      width: 40px;
+      height: 40px;
+      color: $white;
+      transition: all 0.5s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    p {
+      font-size: 1.2em;
+      font-weight: 700;
+      color: $white;
+    }
+  }
+}
