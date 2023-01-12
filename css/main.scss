@@ -57,12 +57,27 @@ svg {
     background: $section-bg;
     padding: 150px 0;
 
+    .time-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
     p {
+      flex-basis: 15%;
       font-family: "Orbitron", sans-serif; /* Weight 700 */
       font-size: 8vw;
       font-weight: 700;
       color: $white;
-      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    .point {
+      font-family: "Orbitron", sans-serif; /* Weight 700 */
+      font-size: 8vw;
+      font-weight: 700;
+      color: $white;
     }
 
     .buttons {

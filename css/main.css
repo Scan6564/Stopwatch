@@ -66,12 +66,25 @@ svg {
   background: linear-gradient(to right, hsl(190deg, 74%, 59%), hsl(190deg, 77%, 88%));
   padding: 150px 0;
 }
+.container .section .time-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
 .container .section p {
+  flex-basis: 15%;
   font-family: "Orbitron", sans-serif; /* Weight 700 */
   font-size: 8vw;
   font-weight: 700;
   color: hsl(0deg, 0%, 100%);
-  margin-bottom: 60px;
+  text-align: center;
+}
+.container .section .point {
+  font-family: "Orbitron", sans-serif; /* Weight 700 */
+  font-size: 8vw;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
 }
 .container .section .buttons {
   width: 100%;

@@ -20,7 +20,12 @@
         <h1>Stopwatch</h1>
       </header>
       <section class="section">
-        <p id="time">00:00:00:00</p>
+        <div class="time-container">
+          <p id="time-hr">00</p><span class="point">:</span>
+          <p id="time-min">00</p><span class="point">:</span>
+          <p id="time-sec">00</p><span class="point">:</span>
+          <p id="time-ms">00</p>
+        </div>
         <div class="buttons">
           <button class="primary-btn" id="action-btn">
             <svg

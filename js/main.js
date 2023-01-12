@@ -1,8 +1,11 @@
-const time = document.getElementById("time");
 const actionBtn = document.getElementById("action-btn");
 const resetBtn = document.getElementById("reset-btn");
 const icon = document.getElementById("change-icon");
 const textBtn = document.getElementById("start");
+const textHr = document.getElementById("time-hr");
+const textMin = document.getElementById("time-min");
+const textSec = document.getElementById("time-sec");
+const textMs = document.getElementById("time-ms");
 
 var hour = 0;
 var minute = 0;
@@ -40,8 +43,10 @@ function stopwatch() {
   if (hour < 10) {
     var realhour = "0" + hour;
   }
-  time.innerHTML =
-    realhour + ":" + realminute + ":" + realsecond + ":" + realmillisecond;
+  textHr.innerHTML = realhour;
+  textMin.innerHTML = realminute;
+  textSec.innerHTML = realsecond;
+  textMs.innerHTML = realmillisecond;
 }
 function pauseBtn() {
   actionBtn.classList.add("pause-btn");
@@ -75,18 +80,10 @@ resetBtn.addEventListener("click", () => {
   minute = 0;
   second = 0;
   millisecond = 0;
-  time.innerHTML =
-    "0" +
-    hour +
-    ":" +
-    "0" +
-    minute +
-    ":" +
-    "0" +
-    second +
-    ":" +
-    "0" +
-    millisecond;
+  textHr.innerHTML = hour + "0";
+  textMin.innerHTML = minute + "0";
+  textSec.innerHTML = second + "0";
+  textMs.innerHTML = millisecond + "0";
   control = false;
   startBtn();
 });
